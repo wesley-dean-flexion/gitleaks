@@ -54,7 +54,7 @@ brew install gitleaks
 docker pull zricethezav/gitleaks:latest
 # To run it from your cloned repo
 cd to/your/repo/
-docker run -v ${PWD}:/my-repo zricethezav/gitleaks:latest --path="/my-repo" [OPTIONS]
+docker run --rm -v "${PWD}:/my-repo" zricethezav/gitleaks:latest --path="/my-repo" [OPTIONS]
 ```
 
 ##### Go
